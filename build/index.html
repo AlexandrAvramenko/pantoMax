@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Home</title>
+</head>
+<body>
+
+<header class="container header">
+    <div class="row header_top">
+        <div class="col col-lg-4">
+            <div class="logo">
+                <div class="logo__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="44" height="50" viewBox="0 0 44 50">
+                        <image xlink:href="data:img/png;base64,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" width="44" height="50"/>
+                    </svg>
+                </div>
+                <div class="logo__text">PANTO<span class="to_color">MAX</span></div>
+            </div>
+        </div>
+        <div class="col-md-auto advantages">
+            <div class="natural">
+                <div class="natural_icon ">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="29" height="37" viewBox="0 0 29 37">
+                    <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAlCAMAAACJZBL9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB3VBMVEUAAADw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45QAAAAmtT/JAAAAnXRSTlMACT4LVvd0GOGd0+N6BesDLpHw9IoZKqUMb9+HDV8GbOjnV/0kgvmwFQfsJ8hBKbmA/vxreEnxiQG2bSzklNBQg0DvWzFD9SsPaB/K5TBUwdbzL7VekqHEXYgh+htlWMKrGhAWwGYgAuoE3Jq0DkvyIzKX1xFgu7yss3kK3pkooB7ufXVInjY99uJw5o9SQlP4w6hMvekIJTtEzJN8aY0zsAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAHdSURBVDjLdZP7Q0xBFMdnsR6brK2lkG3XrTZpUZSQZ6XySCjhUkK0eRMrrRCS9zPvz//qvmbu3d3u+eGc7/l+75m5c+aMECKwYKHwt0UQXLzET13KshAULZ93hWJWhMXKSAml0VWF6mrKzFC+Zi3BdRX5apT1NohVxklsyFM1qiQsr64hWesVN1LnyTbVk0h58s1s8X4c3trQuM1NtxPJ3ampmR0tMtnJrrwf2d3KHon3si//FFWt7HdgEQcKW3CQNhuV0F7YoQ7tUKejdjpUV/dhJVdzJGzGoxxzmB6Ou80PUWnGXjocpuIEJ5WcIhEwwin6JNPPaXfrAc4YPsJZSZzT9PNKvUDS8IMMKeYiUffQxA0/3KBfkkw7pZclbtHpMsIVRlRBkn6FE1w1fB+911SLG3V12aOWmh6jWxVc54aDYho3zXiL23ekWltHj43uyqm4x/1xKT9g1B7tER46i2QIqWl/RMbq8ASPHWYy407TeJYnZqhhShbEIvD0mY2nnjMtxAsGPDf6Mov+asaCr2eZDryx2qws8PYdZN9/MF7Lx1mGGEvnDkTxp4nPQPxL2dcguaXOAt+i3+ewrH5YzGs/fv763faHuZTwtdhftH9hf32wmSZ/VaRnJv8Dnll8Z5OKbIwAAAAASUVORK5CYII=" width="29" height="37"/>
+                </svg>
+                </div>
+                <div class="natural_text"><span class="big_text">100%</span>натурально</div>
+            </div>
+            <div class="effect">
+                <div class="effect_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="42" height="37" viewBox="0 0 42 37">
+                        <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAlCAMAAAADS4u8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABy1BMVEUAAADw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45Tw45QAAAClYqYQAAAAl3RSTlMAAZHa6+zhA5/94Lvc+Ss+9B2aeLZvYKMC39gFGvLAHPYZurz1JQTnyI/WB9T4ZMzkSPHbEfAWorKw/i4I92FKnaacodVXrnvSMDU96BsQ5q8PFNcKmNBb/LexFeVNIOKpv/q0CavLMq3O7zNHct6LTOk/XJWSZqdDbpl+PBiBkFSAE16Xa8qbyUTRhQ7dBsOovcXExrNa/BbOawAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAHWSURBVDjLjdPrW9JgGAbwRw6ZOLIMUckjkkpNSxQVo3ITKzqIHUxNxCIPmUZRYgcrs6zUyjSr+9+1IVyx7eEa94c91/vut3f3PoxIlSKT2WI9VEwF5HCJrVSwHylAlh01H6NyHC+AOkoqiJyoNJZV1a4TRDW1dca0vsGhDJdgTBtr3cpo8pw0pM0trcrwwmF8rOuUcj0ttrUb0jNni5TR4evsMqJN/u707EGvEQ30nUvPoHj+Anf/Yr8kST2yLA9IIQwe7HX4BH2F4kttyMnlzDZXwYQrznA2V681Zra5CqHrN9ja/yoMabYirXk+sRLDdHMom6ByauQWT4Oi57bPk02k9w6N4G4Zb0fHLOOBTO6JCNBEFJZJlsY84znvME/RfTzo5k+NxR/mrNxWEmzTeb4rjBk1jc7mkTSHR2o6/3ghD13EgJo+sSeeTrD0GSQ1JRnJ5yx9gRENXUKKL7AMWUNf4hVPX2NJQ1N4w9MVeDW0Puovfxt+p6fvsaqh9GEKSDJ/fgprWkofQ/ZPTAEvVnSUxATXdR2f9fSLhalKX7GspyZsxHRycwvf/q++/7Cl5/ZP+AVNbPG4z1/nzqS0EzsHzzSv7f7aU+f3H+ff+aQ1m4S0vQ8m6HNWb2J9DgAAAABJRU5ErkJggg==" width="42" height="37"/>
+                    </svg>
+                </div>
+                <div class="effect_text"><span class="big_text">100%</span>эффективно</div>
+            </div>
+        </div>
+    </div><!--header-top-->
+
+    <div class="header_bottom">
+        <div class="row header_bottom__title">
+            <div class="col">
+                <h1 class="h1">Сколько раз за ночь ты можешь?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bulit">
+                <p class="bulit__title">Пантомакс – каменный стояк <br/>для неприличных рекордов</p>
+                <ul>
+                    <li>Мощная эрекция и потенция</li>
+                    <li>Занимайся сексом сколько хочешь</li>
+                    <li>Получай космические оргазмы</li>
+                    <li>Гарантированный стояк  до 3-х часов</li>
+                </ul>
+                <img src="../assets/i/product.png" alt="product">
+            </div>
+            <div class="col sale">
+                <p>-50%</p>
+                <p>Ваша потенция вернется через 21 день применения! Проверьте сами</p>
+            </div>
+            <div class="col timer-form">
+                <div class="timer"></div>
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Example label</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Another label</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!--header-bottom-->
+</header>
+
+<main class="container  main">
+    <div class="row block_2">
+        <div class="col">
+            <div class="block_2__title">
+                <h2 class="h2">Проблема <span class="to_color">ума</span> или <span class="to_color">тела</span>?</h2>
+                <p>Ответьте всего на 2 вопроса и узнайте свой тип импотенции</p>
+            </div>
+            <div class="block_2__question">
+                <h3 class="h3"><span class="number">1</span>Как уменьшалась эрекция?</h3>
+                <button class="button_1">Постепенно</button>
+                <button class="button_2">Внезапно</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row block_3">
+        <h2 class="h2">PANTO<span class="to_color">MAX</span> – максимальное  удовольствие в сексе</h2>
+        <p class="block_3__content"><span class="caption">Пантовые орешки</span> – экопродукт, в состав которого входят натуральные компоненты. Препарат абсолютно совместим с клеточными жидкостями, быстро проникает в кровь и начинает действовать уже через 30минут. Биогенный комплекс орешек действует на половые и репродуктивные функции мужского организма, эндокринные функции, гормональный статус. Также PANTOMAX оказывает многоплановое действие на функции и состояние мозга, сердечно-сосудистой, пищеварительной, нервной, имунной систем.</p>
+    </div>
+
+    <div class="row block_4">
+        <h2 class="h2">Преимущества пантовых орешек PANTO<span class="to_color">MAX</span></h2>
+        <div class="row">
+            <div class="col col-lg-4">
+                <div class="block_4__product">
+                    <img src="../assets/i/product_nut.png" alt="product">
+                </div>
+            </div>
+            <div class="col col-lg-8">
+                <div class="row" block_4__advantages>
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/i/cart1.png" alt="Дарит яркие оргазмы">
+                        <div class="card-body">
+                            <p class="card-text">Дарит яркие оргазмы</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/i/cart2.png" alt="Нормализует  гормональный фон">
+                        <div class="card-body">
+                            <p class="card-text">Нормализует  гормональный фон</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/i/cart3.png" alt="Избавляет от эректильной  дисфункци">
+                        <div class="card-body">
+                            <p class="card-text">Избавляет от эректильной  дисфункци</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/i/cart4.png" alt="Улучшает  кровообращение  в организме">
+                        <div class="card-body">
+                            <p class="card-text">Улучшает  кровообращение  в организме</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/i/cart5.png" alt="Повышает тонус  и жизненные силы">
+                        <div class="card-body">
+                            <p class="card-text">Повышает тонус  и жизненные силы</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/i/cart6.png" alt="Регулирует либидо  и желание">
+                        <div class="card-body">
+                            <p class="card-text">Регулирует либидо  и желание</p>
+                        </div>
+                    </div>
+                </div>
+                <!--<ul class="block_4__advantages">-->
+                    <!--<li class="item-advantages"><img src="../assets/i/cart1.png" alt="Дарит яркие  оргазмы">-->
+                        <!--<p>Дарит яркие  оргазмы</p>-->
+                    <!--</li>-->
+                    <!--<li class="item-advantages"><img src="../assets/i/cart2.png" alt="Нормализует  гормональный фон">-->
+                        <!--<p>Нормализует  гормональный фон</p>-->
+                    <!--</li>-->
+                    <!--<li class="item-advantages"><img src="../assets/i/cart3.png" alt="Избавляет от эректильной  дисфункци">-->
+                        <!--<p>Избавляет от эректильной  дисфункци</p>-->
+                    <!--</li>-->
+                    <!--<li class="item-advantages"><img src="../assets/i/cart4.png" alt="Улучшает  кровообращение  в организме">-->
+                        <!--<p>Улучшает  кровообращение  в организме</p>-->
+                    <!--</li>-->
+                    <!--<li class="item-advantages"><img src="../assets/i/cart5.png" alt="Повышает тонус  и жизненные силы">-->
+                        <!--<p>Повышает тонус  и жизненные силы</p>-->
+                    <!--</li>-->
+                    <!--<li class="item-advantages"><img src="../assets/i/cart6.png" alt="Регулирует либидо  и желание">-->
+                        <!--<p>Регулирует либидо  и желание</p>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="row block_5">
+        <div class="col">
+            <h2 class="h2">Мнение <span class="to_color">врача</span></h2>
+            <div class="block_5__content">
+                <p>50% мужчин до 35 лет имеют проблемы с эрекцией. Поэтому при первых же признаках необходимо брать быка за рога и решать проблему.</p>
+                <p>Я своим пациентам советую орешки Пантомакс, это натуральный препарат, который отлично влияет не только на потенцию, но и на весь организм.</p>
+                <p>При приеме Пантомакс у мужчины нормализуется работа сосудов и повышается потенция. Одним из дйствий препарата также является улучшение психоэмоциональной составляющей секчуальной жизни. Препарат поможет поддержать эрекцию во время всего полового акта. При этом эффет пантовых орешков не зависит от времени их приема.</p>
+                <p>Ильнур Мухазин,врач-андролог,к.м.н.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
