@@ -115,6 +115,7 @@ h2, h3 {
       margin: 0 auto;
     }
   }
+
   .timer {
     display: inline-flex;
 
@@ -170,6 +171,7 @@ h2, h3 {
         }
 
       }
+
       .form__discount-price {
         position: absolute;
         top: 25%;
@@ -189,6 +191,7 @@ h2, h3 {
         }
       }
     }
+
     .form-body {
       margin-top: 130px;
       min-width: 313px;
@@ -230,6 +233,7 @@ h2, h3 {
         }
       }
     }
+
     &__protection {
       color: #000;
       padding: 0 20px;
@@ -327,6 +331,7 @@ h2, h3 {
       }
     }
   }
+
   .block_3 {
     width: 100%;
     max-width: 982px;
@@ -429,6 +434,7 @@ h2, h3 {
       margin: 0 auto 30px;
     }
   }
+
   .block_5 {
     width: 100%;
     max-width: 982px;
@@ -453,7 +459,6 @@ h2, h3 {
       background-position: 300% 95%, -10% 60%;
       overflow-y: scroll;
     }
-
 
     &__content {
       width: 100%;
