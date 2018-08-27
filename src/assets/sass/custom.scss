@@ -2,212 +2,245 @@ body {
   background-color: #000;
   font-family: 'PT Sans', sans-serif;
 }
+
 h2, h3 {
   font-family: 'PT Sans Narrow', sans-serif;
 }
+
 .to_color {
   color: #fc481a;
 }
-
 
 .header {
   background: #000 url("../i/bg_header.png") no-repeat 50% 0;
   color: #fff;
   padding-top: 20px;
 }
-  .logo {
+
+.logo {
+  display: inline-flex;
+  margin-bottom: 15px;
+
+  &__text {
+    font-size: 48px;
+    line-height: 1;
+    padding-left: 10px;
+    font-weight: 500;
+  }
+}
+
+.advantages {
+  font-size: 18px;
+  display: flex;
+  margin-bottom: 15px;
+  vertical-align: middle;
+
+  .natural,
+  .effect {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+
+    .hide {
+      @media (max-width: $sm) {
+        display: none;
+      }
+    }
+
+    .big_text {
+      font-size: 24px;
+      font-weight: 500;
+      padding: 0 8px;
+    }
+  }
+}
+
+.header_bottom {
+  &__title {
+    .h1 {
+      font-size: 55px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 15px auto 30px;
+      letter-spacing: -3px;
+      background: linear-gradient(45deg, #f0e394, #b49b52);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media (max-width: $sm) {
+        font-size: 45px;
+      }
+    }
+  }
+
+  .bulit {
+    &__title {
+      font-size: 22px;
+    }
+
+    &__advantages {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 7px 0 7px 35px;
+        background: url(../i/mark_b.png) no-repeat 0 50%;
+      }
+    }
+
+    img {
+      width: 100%;
+      min-width: 313px;
+    }
+  }
+
+  .sale {
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    margin-bottom: 65px;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+    p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      min-width: 160px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+  .timer {
     display: inline-flex;
 
-
-
-    &__text {
-      font-size: 48px;
-      line-height: 1;
-      padding-left: 10px;
-      font-weight: 500;
+    .timer-title {
+      width: 130px;
+      height: 62px;
+      padding: 7px;
+      margin-left: 5px;
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.5);
     }
   }
-  .advantages {
-    font-size: 18px;
-    display: flex;
-    vertical-align: middle;
 
-    .natural,
-    .effect {
-      display: inline-flex;
-      align-items: center;
-      padding: 0 10px;
+  .form {
+    position: relative;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background: #fff;
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden;
 
-      .big_text {
-        font-size: 24px;
-        font-weight: 500;
-        padding: 0 8px;
-      }
-    }
-  }
-  .header_bottom {
-    &__title {
-      .h1 {
-        font-size: 55px;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin: 30px auto;
-        letter-spacing: -3px;
-        background: linear-gradient(45deg,#f0e394,#b49b52);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    }
-    .bulit {
-      &__title {
-        font-size: 22px;
-      }
-      &__advantages {
-        list-style: none;
-        padding: 0;
-
-        li {
-          padding: 7px 0 7px 35px;
-          background: url(../i/mark_b.png) no-repeat 0 50%;
-        }
-      }
-    }
-    .sale {
-      flex-direction: column;
-      justify-content: flex-end;
+    .form__price {
       display: flex;
-      margin-bottom: 65px;
-      font-family: 'PT Sans Narrow', sans-serif;
+      padding: 20px;
+      position: absolute;
+      top: -5%;
+      left: -25%;
+      width: 150%;
+      height: 130px;
+      background: linear-gradient(180deg, #a84523, #431309);
+      border-radius: 50%;
 
-      p {
-        text-align: center;
-        margin-top: 10px;
-      }
-    }
-    .timer {
-      display: inline-flex;
-
-      .timer-title {
-        width: 130px;
-        height: 62px;
-        padding: 7px;
-        margin-left: 5px;
-        border-radius: 6px;
-        background: rgba(0, 0, 0, 0.5);
-      }
-    }
-    .form {
-      position: relative;
-      font-family: 'PT Sans Narrow', sans-serif;
-      background: #fff;
-      margin-top: 30px;
-      border-radius: 12px;
-      overflow: hidden;
-
-      .form__price {
-        display: flex;
-        padding: 20px;
+      .form__full-price {
         position: absolute;
-        top: -5%;
-        left: -25%;
-        width: 150%;
-        height: 130px;
-        background: linear-gradient(180deg,#a84523,#431309);
-        border-radius: 50%;
+        top: 25%;
+        left: 19%;
+        color: #866057;
 
-        .form__full-price {
-          position: relative;
-          top: 13px;
-          left: 73px;
-          color: #866057;
-
-          p {
-            margin: 0;
-          }
-
-          .old-price {
-            color: #866057;
-            font-size: 44px;
-            line-height: 1;
-            text-decoration: line-through;
-          }
-
-          .rubles {
-            color: #866057;
-            font-size: 24px;
-          }
-
-        }
-        .form__discount-price {
-          position: relative;
-          top: 13px;
-          left: 110px;
-
-          p {
-            margin: 0;
-          }
-
-          .new-price {
-            font-size: 44px;
-            line-height: 1;
-          }
-
-          .rubles {
-            font-size: 24px;
-          }
-        }
-      }
-      .form-body {
-        margin-top: 130px;
-
-        .form-group {
-          padding: 0 20px 15px;
+        p {
           margin: 0;
-
-          .form-control {
-            padding: 14px;
-          }
         }
 
-        .form_button {
-          display: block;
-          color: #fff;
-          margin: 5px 20px 15px;
-          font-size: 22px;
-          font-weight: bold;
-          border-radius: 5px;
-          text-decoration: none;
-          text-transform: uppercase;
-          background: linear-gradient(180deg,#d73f17,#fa4a1b);
+        .old-price {
+          color: #866057;
+          font-size: 44px;
+          line-height: 1;
+          text-decoration: line-through;
+        }
 
-          &__mark {
-            padding: 14px 20px;
-            position: absolute;
-            display: inline-block;
-            width: 50px;
-            height: 60px;
-            background: #b13412;
-            border-radius: 5px 0 0 5px;
-          }
-          &__text {
-            text-align: center;
-            display: block;
-            padding: 13px 0 14px 45px;
-          }
+        .rubles {
+          color: #866057;
+          font-size: 24px;
+        }
+
+      }
+      .form__discount-price {
+        position: absolute;
+        top: 25%;
+        right: 20%;
+
+        p {
+          margin: 0;
+        }
+
+        .new-price {
+          font-size: 44px;
+          line-height: 1;
+        }
+
+        .rubles {
+          font-size: 24px;
         }
       }
-      &__protection {
-        color: #000;
-        padding: 0 20px;
-        font-size: 15px;
+    }
+    .form-body {
+      margin-top: 130px;
+      min-width: 313px;
 
-        svg {
-          margin: 0 3px 7px 5px;
+      .form-group {
+        padding: 0 20px 15px;
+        margin: 0;
+
+        .form-control {
+          padding: 14px;
         }
+      }
+
+      .form_button {
+        display: block;
+        color: #fff;
+        margin: 5px 20px 15px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #d73f17, #fa4a1b);
+
+        &__mark {
+          padding: 14px 20px;
+          position: absolute;
+          display: inline-block;
+          width: 50px;
+          height: 60px;
+          background: #b13412;
+          border-radius: 5px 0 0 5px;
+        }
+
+        &__text {
+          text-align: center;
+          display: block;
+          padding: 13px 0 14px 45px;
+        }
+      }
+    }
+    &__protection {
+      color: #000;
+      padding: 0 20px;
+      font-size: 15px;
+
+      svg {
+        margin: 0 3px 7px 5px;
       }
     }
   }
+}
 
 .main {
   .block_2 {
@@ -285,15 +318,13 @@ h2, h3 {
         }
       }
 
-
-
       .h3 {
-         font-size: 24px;
-         font-weight: bold;
-         text-transform: uppercase;
-         padding: 30px 0;
-         margin: 0;
-       }
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 30px 0;
+        margin: 0;
+      }
     }
   }
   .block_3 {
@@ -304,12 +335,20 @@ h2, h3 {
     border-radius: 8px;
     margin: 0 auto 65px;
 
+    @media (max-width: $sm) {
+      background-position: 98% 50%;
+      overflow-y: scroll;
+    }
 
     &__content {
       width: 100%;
       max-width: 598px;
       font-size: 17px;
       padding-left: 40px;
+
+      @media (max-width: $sm) {
+        font-size: 15px;
+      }
 
       .caption {
         font-weight: bold;
@@ -324,20 +363,34 @@ h2, h3 {
       font-weight: 550;
       letter-spacing: -3px;
       text-transform: uppercase;
-    }
 
+      @media (max-width: $sm) {
+        font-size: 35px;
+      }
+    }
   }
+
   .block_4 {
     background: #000 url(../i/bg_block4.png) no-repeat -31% 109%;
     margin: 0 auto;
+    text-align: center;
     padding-bottom: 65px;
-    box-shadow: inset 15px 0px 15px -2px rgba(0,0,0,0.93);
+    box-shadow: inset 15px 0px 15px -2px rgba(0, 0, 0, 0.93);
 
+    &__pr {
+      height: 551px;
+
+      @media (max-width: $lg) {
+        font-size: 14px;
+        order: 2;
+      }
+    }
     &__product {
       background: url("../i/product_n.png") no-repeat 50% 50%;
       width: 100%;
       height: 100%;
     }
+
     &__advantages {
       display: flex;
       flex-wrap: wrap;
@@ -347,9 +400,14 @@ h2, h3 {
       .advantages_item {
         width: 30%;
         min-width: 200px;
+        list-style: none;
         background: #fff;
         border-radius: 12px;
         margin-bottom: 15px;
+
+        img {
+          width: 100%;
+        }
 
         .advantages_text {
           display: flex;
@@ -371,21 +429,41 @@ h2, h3 {
       margin: 0 auto 30px;
     }
   }
-
   .block_5 {
     width: 100%;
     max-width: 982px;
     height: 440px;
-    background: #fff url("../i/bg_block5.png") no-repeat 120% 50%;
+    background: url("../i/podpis.png"), url("../i/bg_block5.png");
+    background-color: #fff;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 95%, -10% 60%;
     border-radius: 8px;
     margin: 0 auto;
     margin-bottom: 60px;
+
+    @media (max-width: $lg) {
+      background-position: 60% 95%, -10% 60%;
+    }
+
+    @media (max-width: $md) {
+      background-position: 200% 95%, -10% 60%;
+    }
+
+    @media (max-width: $sm) {
+      background-position: 300% 95%, -10% 60%;
+      overflow-y: scroll;
+    }
+
 
     &__content {
       width: 100%;
       max-width: 605px;
       font-size: 16px;
       padding-left: 40px;
+
+      @media (max-width: $sm) {
+        font-size: 14px;
+      }
 
       & p:last-child {
         margin: 30px 0;
@@ -400,8 +478,11 @@ h2, h3 {
       letter-spacing: -3px;
       text-transform: uppercase;
       margin-bottom: 15px;
+
+      @media (max-width: $sm) {
+        font-size: 35px;
+      }
     }
   }
-
 }
 
